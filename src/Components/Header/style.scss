@@ -1,0 +1,81 @@
+@import "../../main.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainnav {
+  width: 100%;
+  background-color: $maroon-color;
+  ul {
+    cursor: pointer;
+    .menuItem {
+      .subs li {
+        display: none;
+        ul > li {
+          display: none;
+        }
+        &:hover {
+          ul > li {
+            display: block;
+          }
+        }
+      }
+      &:hover {
+        ul > li {
+          display: block;
+        }
+      }
+    }
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 11px 10px 12px 1px;
+      color: $white-color;
+      text-align: center;
+      position: relative;
+      border-bottom: 1px solid $white-color;
+      list-style: none;
+
+      a {
+        color: $white-color;
+        text-decoration: none;
+        font-size: $description;
+        padding: 12px 23px;
+      }
+      .dropdownarrow:after {
+        content: "\25BA";
+        padding: 14px 0;
+        position: absolute;
+        right: 25px;
+        top: 0;
+        z-index: 1;
+        text-align: center;
+        width: 5%;
+        height: 50%;
+        pointer-events: none;
+      }
+      ul {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 120px;
+        display: block;
+        background-color: $maroon-color;
+        box-shadow: 2px 1px #bfb5b5;
+        border-left: 1px solid $white-color;
+
+        li {
+          display: block;
+          position: relative;
+
+          ul {
+            left: 120px;
+            top: 0px;
+          }
+        }
+      }
+    }
+  }
+}

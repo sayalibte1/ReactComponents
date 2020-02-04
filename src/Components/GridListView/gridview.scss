@@ -1,0 +1,48 @@
+@import "../../main.scss";
+img {
+  max-width: 100%;
+  display: block;
+}
+.list {
+  .soapInfo {
+    display: flex;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $dark-gray;
+    .soapDescription {
+      margin-left: 30px;
+    }
+    .productImg {
+      width: 25%;
+    }
+  }
+  li {
+    width: 100%;
+  }
+}
+.grid {
+  .soapInfoWrapper {
+    width: 33.33%;
+    display: inline-flex;
+
+    .soapInfo {
+      display: block;
+      padding: 10px;
+    }
+  }
+}
+#products {
+  .soapType {
+    color: $faint-red;
+  }
+  .soapInfoWrapper {
+    .soapInfo {
+      h3 {
+        color: $blue-color;
+      }
+      .description {
+        color: $orange-color;
+      }
+    }
+  }
+}

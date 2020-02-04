@@ -1,0 +1,23 @@
+/*colours*/
+$white-color: #fff;
+$black-color: #000;
+$light-white-gray: #f6f5f2;
+$primary-font-color: #040833;
+$light-gray: #d7d8dd;
+$dark-gray: #8d8d8d;
+$red-color: #ed5b46;
+$maroon-color: #9b2e2e;
+$orange-color: #ea513d;
+$green-color: #219c85;
+$blue-color: #0000ff;
+$faint-red: #c35f5f;
+/*font size*/
+$main-heading: 40px;
+$sub-heading: 25px;
+$title: 20px;
+$description: 16px;
+@mixin transition_effect {
+  transition: ease-in 0.35s;
+  -moz-transition: ease-in 0.35s;
+  -webkit-transition: ease-in 0.35s;
+}

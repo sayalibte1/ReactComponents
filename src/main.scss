@@ -1,0 +1,10 @@
+@import "./variables.scss";
+@import "./media.scss";
+body {
+  background-color: $light-white-gray;
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
